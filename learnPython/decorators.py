@@ -11,10 +11,12 @@ def external_function1(name):
     print(f'Hi 1 {name}')
     return name*2
 
+
 def external_function2(name):
     print(f'Hi 2 {name}')
     return name*3
 external_function2 = decorator_function(external_function2)
+
 
 @decorator_function
 def external_function3(name):
